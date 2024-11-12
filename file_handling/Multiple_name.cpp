@@ -17,8 +17,9 @@ int main()
     getline(std::cin, nameToFind);
     string name;
     int count = 0;
-    while (file >> name)
+    while (file)
     {
+        file>>name;
         if (name == nameToFind)
         {
             count++;
